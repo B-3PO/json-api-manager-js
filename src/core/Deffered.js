@@ -1,7 +1,7 @@
 export default function Deffered() {
-  var self = this;
-  self.promise = new Promise(function (resolve, reject) {
-    self.reject = reject
-    self.resolve = resolve
-  });
+  this.promise = new Promise(function (resolve, reject) {
+    this.reject = reject
+    this.resolve = resolve
+  }.bind(this));
+  Object.freeze(this);
 }

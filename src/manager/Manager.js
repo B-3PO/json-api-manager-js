@@ -8,7 +8,7 @@ export default function Manager(options) {
   var service = {
     get: get
   };
-  Object.defineProperty(service, {
+  Object.defineProperty(service, '$$init', {
     value: init,
     enumerable: false
   });

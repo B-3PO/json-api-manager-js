@@ -26,14 +26,13 @@ module.exports = function(config) {
 
       plugins: [
         'karma-jasmine',
-        // 'jasmine-ajax',
         'karma-rollup-preprocessor',
         'karma-phantomjs-launcher'
       ],
 
       rollupPreprocessor: {
         plugins: [
-          nodeResolve({jsnext: true, main: true, preferBuiltins: true}),
+          nodeResolve(),
           buble()
         ],
         format: 'iife',

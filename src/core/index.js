@@ -1,5 +1,5 @@
 import * as constants from './constants';
-import * as Deffered from './Deffered';
+import Deffered from './Deffered';
 import * as request from './request';
 export {
   clone,

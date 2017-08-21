@@ -1,5 +1,5 @@
 'use strict';
-import Deffered from '../../src/core/deffered';
+import Deffered from '../../src/core/Deffered';
 
 describe('deffered', function () {
   it('should pass', function (done) {
